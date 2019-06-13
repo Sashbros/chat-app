@@ -1,0 +1,136 @@
+.Split {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+html, body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 20%;
+}
+.ltop {
+  flex: 10%;
+  background: red;
+}
+.lbottom {
+  flex: 90%;
+  background: aliceblue;
+  overflow: scroll;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 80%;
+}
+.rtop {
+  background: aqua;
+  flex: 95%;
+  overflow: scroll;
+}
+.rbottom {
+  flex: 5%;
+  background: white;
+}
+
+.addContacts {
+  font-family: Ubuntu;
+  width: 100%;
+  height: 100%;
+}
+.msg {
+  font-family: Ubuntu;
+  flex: 95%;
+}
+.sendmsg {
+  font-family: Ubuntu;
+  flex: 5%;
+}
+.user {
+  border: none;
+  font-family: Ubuntu;
+  color: black;
+  background-color: aliceblue;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 50px;
+}
+.active {
+  border: none;
+  font-family: Ubuntu;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.chatmsgself {
+  border: none;
+  align-items: right;
+  background-color: lightcoral;
+  font-family: Ubuntu;
+  font-size: 20px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  width: max-content;
+}
+.chatmsgother {
+  border: none;
+  text-align: left;
+  background-color: lightgreen;
+  font-family: Ubuntu;
+  font-size: 20px;
+  padding: 15px;
+  margin:10px;
+  border-radius: 10px;
+  width: max-content;
+}
+.AddPer {
+  width: 100%;
+  height: 100%;
+}
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.Chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Message {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    flex: 80%;
+  }
+  .rtop {
+    background: green;
+    flex: 95%;
+  }
+}
